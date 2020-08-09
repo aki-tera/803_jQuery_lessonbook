@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>selecter1.html</title>
+    <script src="http://code.jquery.com/jQuery-2.2.4.min.js" charset="utf-8"></script>
+    <script>
+      $(document).ready(function(){
+        //このなかに記述 開始
+
+        //$("name要素属性=name属性値")に対してstyle="color:#f00;"を設定
+        $("*").css("color", "#f00");      //文字を赤色に
+
+        //この中に処理を記述 終了
+      });
+    </script>
+  </head>
+  <body>
+    <!-- name=testにのみ、赤色のスタイルが設定される -->
+    <div>
+      <p>これはname属性"test"の子要素</p>
+      <p>これはname属性"test"の子要素</p>
+      <p>これはname属性"test"の子要素</p>
+      <p>これはname属性"test"の子要素</p>
+    </div>
+    <p>これはp要素</p>
+    <ul>
+      <li>全ての要素が対象</li>
+      <li>全ての要素が対象</li>
+    </ul>
+  </body>
+</html>
