@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>method_css1-1.html</title>
+    <script src="http://code.jquery.com/jQuery-2.2.4.min.js" charset="utf-8"></script>
+    <script>
+      $(document).ready(function(){
+        //このなかに記述 開始
+
+        $("body").append('<div id="setumei0">0.テスト</div>').prepend('<div id="setumei3">3.テスト</div>').css("color", "#f00");
+
+        //この中に処理を記述 終了
+      });
+    </script>
+  </head>
+  <body>
+    <div id="setumei1">吾輩は猫である</div>
+    <div id="setumei2">名前はまだ無い</div>
+  </body>
+</html>
