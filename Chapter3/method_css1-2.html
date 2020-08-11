@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>method_css1-1.html</title>
+    <script src="http://code.jquery.com/jQuery-2.2.4.min.js" charset="utf-8"></script>
+    <script>
+      $(document).ready(function(){
+        //このなかに記述 開始
+
+        $("#setumei1").css("color", "#0ff");
+        $("#setumei1").css("background-color", "#fff");
+        $("#setumei1").css("border", "1px solid #555");
+
+        $("#setumei2").css({
+            "color"             :"#f00",
+            "background-color"  :"#fff",
+            "border"            :"1px solid #555"
+        });
+
+        //この中に処理を記述 終了
+      });
+    </script>
+  </head>
+  <body>
+    <div id="test">
+      <div id="setumei1">吾輩は猫である</div>
+      <div id="setumei2">名前はまだ無い</div>
+    </div>
+  </body>
+</html>
