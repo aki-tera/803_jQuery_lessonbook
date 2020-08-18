@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>method_css1-1.html</title>
+    <script src="http://code.jquery.com/jQuery-2.2.4.min.js" charset="utf-8"></script>
+    <script>
+      $(document).ready(function(){
+        //このなかに記述 開始
+        $("body").append("<p>表示されているURL：" + window.location + "</p>");
+        $("body").append("<p>ウインドウ横幅：" + window.innerWidth + "</p>");
+        $("body").append("<p>ウインドウ縦幅：" + window.innerHeight + "</p>");
+
+        //この中に処理を記述 終了
+      });
+    </script>
+  </head>
+  <body>
+    <h1>リサイズ</h1>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>method_css1-1.html</title>
+    <style>
+      input{
+          width: 300px;
+      }
+    </style>
+    <script src="http://code.jquery.com/jQuery-2.2.4.min.js" charset="utf-8"></script>
+    <script>
+      $(document).ready(function(){
+        //このなかに記述 開始
+        $("#change_sct").change(function(){
+          alert($(this).val());
+        });
+
+        //この中に処理を記述 終了
+      });
+    </script>
+  </head>
+  <body>
+    <p>
+      <select id="change_sct">
+        <option value="1">良い子は他を選択してね1</option>
+        <option value="2">良い子は他を選択してね2</option>
+        <option value="3">良い子は他を選択してね3</option>
+        <option value="4">良い子は他を選択してね4</option>
+        <option value="5">良い子は他を選択してね5</option>
+        <option value="6">良い子は他を選択してね6</option>
+      </select>
+    </p>
+  </body>
+</html>
