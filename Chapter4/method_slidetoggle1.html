@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>method_css1-1.html</title>
+    <script src="http://code.jquery.com/jQuery-2.2.4.min.js" charset="utf-8"></script>
+    <script>
+      $(document).ready(function(){
+        //このなかに記述 開始
+        $("#hide_area1").slideToggle();
+        $("#hide_area2").slideToggle("slow");
+        $("#hide_area3").slideToggle(5000);
+
+        //この中に処理を記述 終了
+      });
+    </script>
+    <style>
+      div{float: left; display: none;}
+      #hide_area1{width: 300px; height: 100px; background-color: #5ab270;}
+      #hide_area2{width: 300px; height: 100px; background-color: #e53131;}
+      #hide_area3{width: 300px; height: 100px; background-color: #987cff;}
+    </style>
+  </head>
+  <body>
+    <div id="hide_area1">default</div>
+    <div id="hide_area2">slow</div>
+    <div id="hide_area3">5second</div>
+  </body>
+</html>
