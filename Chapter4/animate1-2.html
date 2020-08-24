@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>method_css1-1.html</title>
+    <script src="http://code.jquery.com/jQuery-2.2.4.min.js" charset="utf-8"></script>
+    <style media="screen">
+      div{height: 300px; width: 300px; background-color: #e8f836}
+    </style>
+    <script>
+      $(document).ready(function(){
+        //このなかに記述 開始
+        $("#move_box").animate({
+          "marginLeft": "600px",
+          "width"     : "30px",
+          "height"    : "30px"
+        },{
+          duration: 6000
+        });
+
+
+        //この中に処理を記述 終了
+      });
+    </script>
+  </head>
+  <body>
+    <div id="move_box">
+  </body>
+</html>

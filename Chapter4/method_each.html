@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>method_css1-1.html</title>
+    <script src="http://code.jquery.com/jQuery-2.2.4.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        //このなかに記述 開始
+        $("#one > p").each(function(){
+          var txt = "<p>"+$(this).text()+"</p>";
+          $("#two").append(txt);
+        });
+        //この中に処理を記述 終了
+      });
+    </script>
+  </head>
+  <body>
+    <div id="one">
+      <p>1個目のPです</p>
+      <p>2個目のPです</p>
+      <p>3個目のPです</p>
+      <p>4個目のPです</p>
+      <p>5個目のPです</p>
+      <p>6個目のPです</p>
+    </div>
+    <div id="two" style="color : red">
+    </div>
+  </body>
+</html>
