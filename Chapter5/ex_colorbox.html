@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ex_colorbox.html</title>
+    <script src="http://code.jquery.com/jQuery-2.2.4.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="img/colorbox.css">
+    <script src="img/jquery.colorbox-min.js"></script>
+    <script>
+      $(document).ready(function(){
+        //このなかに記述 開始
+        $(".colorbox").colorbox({
+          rel: 'colorbox',	    //colorboxがグループ化されるため、画面に［次へ・戻る］ボタン表示される
+          transition: "elastic",	//["elastic","fade","none"]、デフォルト＝elastic
+          speed: 400,	            //写真表示スピード（切替）
+          opacity: 0.85,	        //背景の透明度[0...1]、デフォルト=0.85
+          slideshow: true,
+          slideshowSpeed: 3000
+        });
+        //この中に処理を記述 終了
+      });
+    </script>
+  </head>
+  <body>
+    <div id="content">
+      <h1>slidr.jsライブラリ</h1>
+      <div style="width:600px;">
+        <p>
+          <a class="colorbox" href="img/o1.jpg" title="写真１">DEMO 1</a>
+        </p>
+        <p>
+          <a class="colorbox" href="img/o2.jpg" title="写真２">DEMO 2</a>
+        </p>
+        <p>
+          <a class="colorbox" href="img/o3.jpg" title="写真３">DEMO 3</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
